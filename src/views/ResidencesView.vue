@@ -7,17 +7,6 @@ export default {
 
 
 <template>
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <title>Résidences et établissements</title>
-    </head>
-
-    <body>
-
         <hr class="hrHead">
 
         <section class="appartsHead">
@@ -226,13 +215,10 @@ export default {
             <ScrollToTop />
             
         </footer>
-
-    </body>
-    </html>
 </template>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 

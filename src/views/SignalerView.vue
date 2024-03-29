@@ -7,16 +7,6 @@ export default {
 
 
 <template>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <title>Les sorties</title>
-  </head>
-  <body>
-
     <section class="imgActus">
         <img src="@/assets/actus_bois_colombes.png" alt="Actualités de Bois-Colombes">
     </section>
@@ -44,17 +34,17 @@ export default {
           </ul>
           <img src="@/assets/signaler_img.png" alt="Image centre">
         </div>
-      </div>
 
-      <div class="inscriTxt2">
-        <h2>Comment s'inscrire au CCAS</h2>
-        <div>
-          <p>Toute personne de plus de 55 ans peut s'inscrire au CCAS, en présentant :</p>
-          <ul>
-            <li>le contrat d'accompagnement rempli et signé</li>
-            <li>une pière d'identité</li>
-            <li>un justificatif de domicile.</li>
-          </ul>
+        <div class="inscriTxt2">
+          <h2>Comment s'inscrire au CCAS</h2>
+          <div>
+            <p>Toute personne de plus de 55 ans peut s'inscrire au CCAS, en présentant :</p>
+            <ul>
+              <li>le contrat d'accompagnement rempli et signé</li>
+              <li>une pière d'identité</li>
+              <li>un justificatif de domicile.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -190,14 +180,13 @@ export default {
       <ScrollToTop />
 
     </footer>
-
-  </body>
-  </html>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* BODY */
 
 .imgActus {
   display: flex;
@@ -215,7 +204,7 @@ export default {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 
     img {
       width: 18px;
@@ -224,17 +213,19 @@ export default {
 
     h1 {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
       font-family: 'Raleway';
       font-size: 30px;
       font-weight: bold;
       text-transform: uppercase;
     }
+  }
 
-    .hrActus {
-      border: 2px solid rgb(43, 44, 43);
-      margin-top: 20px;
-    }
+  .hrActus {
+    border: 2px solid #070707;
+    margin-left: auto;
+    margin-right: auto;
+    width: 84%;
   }
 
   .inscription {
@@ -242,8 +233,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
-    margin-left: 140px;
-
+    height: 110vh;
 
     h2 {
       display: flex;
@@ -253,10 +243,13 @@ export default {
       text-transform: uppercase;
       align-items: center;
       letter-spacing: 0.4px;
+      margin-left: 140px;
+      margin-bottom: 40px;
     }
 
     .inscriTxt {
       display: flex;
+      justify-content: center;  
       margin-top: 20px;
       width: 100%;
       height: 400px;
@@ -269,6 +262,7 @@ export default {
         list-style: inside;
         font-family: 'Rubik', sans-serif;
         text-align: start;
+        margin-top: 50px;
         font-size: 16px;
         width: 340px;
         gap: 2px;
@@ -289,26 +283,33 @@ export default {
             height: 350px;
             float: right;
             margin-left: 400px;
-            margin-top: 5px;
+            margin-top: 5%;
         }
     }
 
     .inscriTxt2 {
       display: flex;
+      flex-direction: column;
       margin-top: 20px;
       width: 100%;
-      height: 400px;
       font-family: 'Rubik', sans-serif;
       font-weight: 400;
+
+      p {
+        font-size: 18px;
+        text-align: start;
+        margin-left: 210px;
+        font-family: 'Rubik', sans-serif;
+      }
 
       ul {
         display: flex;
         flex-direction: column;
         list-style: inside;
         font-family: 'Rubik', sans-serif;
-        font-size: 16px;
-        list-style: inside;
-        margin-left: 140px;
+        text-align: start;
+        margin-left: 210px;
+        margin-top: 20px;
         width: 340px;
         gap: 2px;
 
@@ -325,7 +326,52 @@ export default {
       }
     }
   }
+
+  .contrat {
+    display: flex;
+    flex-direction: column;
+
+    .contratTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #1F266B;
+      height: 20vh;
+      gap: 20px;
+
+      h3 {
+        font-family: 'Raleway';
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        align-items: center;
+        color: white;
+      }
+
+      p {
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        color: white;
+      }
+
+      button {
+        background-color: #FBBA00;
+        color: black;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    }
+  }
 }
+
+/* FOOTER */ 
 
 .footer {
   display: flex;

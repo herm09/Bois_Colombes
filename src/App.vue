@@ -60,6 +60,42 @@ export default {
   font: inherit;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 70px;
+
+  img {
+    width: 50%; 
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+    a {
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 25px;
+      color: black;
+      list-style: none;
+      display: inline-block;
+      padding-bottom:2px; /*the space for the gradient*/
+      background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)) center bottom; /*OR bottom right OR bottom left*/
+      background-size: 0% 2px; /*width:0% height:2px*/
+      background-repeat:no-repeat; /* Don't repeat !!*/
+      transition: all 0.45s;
+
+      &:hover {
+        background-size: 100% 2px; /*width:100% height:2px*/
+      }
+    }
+  }
+}
+
 #scroll-to-top {
   position: fixed;
   width: 30px;
