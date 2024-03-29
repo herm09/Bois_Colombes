@@ -532,7 +532,7 @@ header {
   }
 
   .scroll {
-    height: 6vh;
+    height: 7.2vh;
   }
 }
 

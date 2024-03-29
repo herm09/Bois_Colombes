@@ -17,7 +17,7 @@ export default {
 
   <header>
     <div class="menu">
-      <a href="index.html"><img src="@/assets/logo_ccas.png" alt="Logo CCAS" class="logo"></a>
+      <router-link to="/accueil"><img src="@/assets/logo_ccas.png" alt="Logo CCAS" class="logo"></router-link>
       
       <nav>
         <router-link to="/accueil">Accueil</router-link>
