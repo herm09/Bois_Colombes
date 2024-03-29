@@ -3,6 +3,17 @@
 export default {
   name: 'SortiesView',
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 </script>
 
 
@@ -17,22 +28,6 @@ export default {
   </head>
 
   <body>
-
-    <!-- <header>
-      <div class="menu">
-        <a href="index.html"><img src="@/assets/logo_ccas.png" alt="Logo CCAS" class="logo"></a>
-        <ul>
-          <li><a href='signaler.html'>Se signaler</a></li>
-          <li><a href='sorties.html'>Sorties</a></li>
-          <li><a href="#">Résidences</a></li>
-          <li><a href="#">Se faire aider</a></li>
-        </ul>
-
-        <div class="links">
-          <img src="@/assets/zoom.png" alt="Agrandir" class="zoom">
-        </div>
-      </div>
-    </header> -->
 
     <hr class="hrHead">
 
@@ -97,14 +92,9 @@ export default {
 
       <img src="@/assets/img_sorties.png" alt="Image de montagnes" class="ImgMontagne">
 
-      <a href="#top" id="scroll_to_top">
-        <button>
-            <img src="@/assets/top.png" alt="Retour en haut">
-        </button>
-      </a>
     </section>
     
-    <footer>
+    <footer id="Footer">
       <div class="footer">
         <!-- <img src="img/balancoire.png" alt="" class="balancoire"> -->
         <section class="footer1">
@@ -158,6 +148,9 @@ export default {
         <section class="scroll">
         </section>
       </div>
+
+      <ScrollToTop />
+
     </footer>
 
   </body>
@@ -258,7 +251,6 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
-    // border-bottom: 3px solid rgb(43, 44, 43);
     padding-bottom: 25px;
 
     .TitleSorties {
@@ -307,13 +299,13 @@ header {
       }
 
       h2 {
-          display: flex;
-          font-family: 'Raleway';
-          font-size: 23px;
-          font-weight: 700;
-          text-transform: uppercase;
-          align-items: center;
-          letter-spacing: 0.4px;
+        display: flex;
+        font-family: 'Raleway';
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        align-items: center;
+        letter-spacing: 0.4px;
       }
     }
 
@@ -396,7 +388,7 @@ header {
     margin-bottom: 50px;
   }
 
-  #scroll_to_top {
+  #scroll_top {
     position: fixed;
     width: 30px;
     height: 25px;
