@@ -53,20 +53,25 @@ export default {
         <div class="contratTitle">
           <h3>Prenez connaissance des termes du contrat d'accompagnement</h3>
           <p>Contrat individuel d'accompagnement</p>
-          <button>Télécharger</button>
+          <div class="download">
+            <hr class="hrDownload1">
+            <button>Télécharger</button>
+            <hr class="hrDownload2">
+          </div>
         </div>
 
         <div class="method1">
           <h2>Choisissez votre méthode préférée pour remplir le contrat :</h2>
           <div class="enLigne">
             <h4>Inscription tout en ligne</h4>
-            <p>En remplissant le formulaire ci-dessous.
+            <p>En remplissant le formulaire ci-dessous. <br>
               N'oubliez pas de joindre les pièces demandées et signez le contrat.
-              <br>
+              <br><br>
               En cliquant sur "Envoyer", votre demande nous parvient directement 
-              par mail, et vous est addressée en copie (PDF en piède jointe).
+              par mail, et vous est addressée en copie (PDF en piède jointe).<br>
               Le CCAS vous confirmera par retour de votre inscription.
             </p>
+          </div>  
         </div>
 
         <div class="method2">
@@ -74,16 +79,17 @@ export default {
             <h4>Incription par mail</h4>
             <p>
               Vous avez téléchargé le contrat individuel d'accompagnement 
-              pour le lire ? 
+              pour le lire ? <br>
               Et bien, remplissez-le maintenant !
-
+              <br><br>
               Envoyez-le par mail, accompagné des scans des pièces demandées : 
-
+              <br><br>
               une pièce d'identité
+              <br>
               un justificatif de domicile.
-
+              <br><br>
               ccas@bois-colombes.com
-
+              <br><br>
               Le CCAS vous confirmera par retour de mail votre inscription.
             </p>
           </div>
@@ -93,12 +99,12 @@ export default {
             <h5>Espace Duflos - 79, rue Charles-Duflos</h5>
             <p>Présentez-vous à l'accueil du CCAS muni de votre pièce 
               d'identité et d'un justificatif de domicile.
-
+              <br><br>
               Un agent vous aidera à remplir le contrat.
             </p>
           </div>
         </div>
-      </div>
+
       </section>
 
       <section class="form">
@@ -233,7 +239,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
-    height: 110vh;
+    height: 100vh;
 
     h2 {
       display: flex;
@@ -244,7 +250,6 @@ export default {
       align-items: center;
       letter-spacing: 0.4px;
       margin-left: 140px;
-      margin-bottom: 40px;
     }
 
     .inscriTxt {
@@ -330,6 +335,7 @@ export default {
   .contrat {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
     .contratTitle {
       display: flex;
@@ -337,7 +343,7 @@ export default {
       align-items: center;
       justify-content: center;
       background-color: #1F266B;
-      height: 20vh;
+      height: 30vh;
       gap: 20px;
 
       h3 {
@@ -355,7 +361,14 @@ export default {
         color: white;
       }
 
-      button {
+      .download {
+        display: flex;
+
+        .hrDownload1 {
+          border: 2px solid #FBBA00;
+        }
+
+        button {
         background-color: #FBBA00;
         color: black;
         font-family: 'Rubik', sans-serif;
@@ -366,6 +379,131 @@ export default {
         border: none;
         border-radius: 30px;
         cursor: pointer;
+        }
+
+        .hrDownload2 {
+          border: 2px solid #FBBA00;
+        }
+      }      
+    }
+  }
+
+  .method1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    h2 {
+      font-family: 'Raleway';
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      align-items: center;
+      letter-spacing: 0.4px;
+      margin-bottom: 40px;
+    }
+
+    .enLigne {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(225, 225, 225);
+      border-radius: 10px;
+      height: 25vh;
+      width: 70%;
+
+      h4 {
+        display: flex;
+        font-family: 'Raleway';
+        margin-left: 60px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: start;
+        margin-left: 60px;
+        font-family: 'Rubik', sans-serif;
+      }
+    }
+  
+  }
+
+  .method2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    text-align: start;
+    height: 40vh;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    .mail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #89BAAD;
+      border-radius: 10px;
+      width: 100%;
+
+      h4 {
+        font-family: 'Raleway';
+        color: #1F266B;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: start;
+        margin-left: 20px;
+        font-family: 'Rubik', sans-serif;
+      }
+    }
+
+    .accueil {
+      display: flex;
+      flex-direction: column;
+      background-color: #89BAAD;
+      border-radius: 10px;
+      width: 100%;
+
+      h4 {
+        font-family: 'Raleway';
+        color: #1F266B;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 20px;
+        margin-top: 18px;
+      }
+
+      h5 {
+        font-family: 'Raleway';
+        color: #1F266B;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 20px;
+        width: 80%;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: start;
+        margin-left: 20px;
+        font-family: 'Rubik', sans-serif;
+        width: 70%;
       }
     }
   }
