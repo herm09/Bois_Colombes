@@ -17,22 +17,6 @@ export default {
   </head>
   <body>
 
-    <!-- <header>
-        <div class="menu">
-            <a href="index.html"><img src="img/logo_ccas.png" alt="Logo CCAS" class="logo"></a>
-            <ul>
-                <li><a href='signaler.html'>Se signaler</a></li>
-                <li><a href='sorties.html'>Sorties</a></li>
-                <li><a href="#">Résidences</a></li>
-                <li><a href="#">Se faire aider</a></li>
-            </ul>
-            <div class="links">
-                <img src="img/aa.png" alt="Agrandir" class="zoom">
-                <img src="img/ecouter.png" alt="Audio description" class="listen">
-            </div>
-        </div>
-    </header> -->
-
     <section class="imgActus">
         <img src="@/assets/actus_bois_colombes.png" alt="Actualités de Bois-Colombes">
     </section>
@@ -133,6 +117,9 @@ export default {
         <section class="scroll">
         </section>
       </div>
+
+      <ScrollToTop />
+
     </footer>
 
   </body>
@@ -263,28 +250,6 @@ export default {
         li::marker {
           color: rgb(2, 2, 2);
         }
-      }
-    }
-  }
-
-  #scroll_to_top {
-    position: fixed;
-    width: 30px;
-    height: 25px;
-    bottom: 31px;
-    right: 150px;
-      
-    button {
-      background-color: #FBBA00;
-      border: none;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      cursor: pointer;
-      width: 45px;
-      height: 230%;
-        
-      img {
-          width: 25px;
       }
     }
   }

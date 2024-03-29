@@ -33,7 +33,7 @@ export default {
     </div>
   </header>
 
-  <section class="app-container" id="scroll_top">
+  <section class="app-container" id="scroll-to-top">
     <ScrollToTop />
   </section>
   
@@ -60,10 +60,27 @@ export default {
   font: inherit;
 }
 
-.app-container {
-  max-width: 82rem;
-  margin: auto;
-  padding: 3rem 1rem;
+#scroll-to-top {
+  position: fixed;
+  width: 30px;
+  height: 25px;
+  bottom: 31px;
+  right: 150px;
+
+  button {
+    background-color: #FBBA00;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 230%;
+      
+    img {
+      width: 40px;
+    }
+  }
 }
+
 
 </style>

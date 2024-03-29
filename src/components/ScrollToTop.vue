@@ -24,7 +24,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#scroll_top {
+#scroll-to-top {
   position: fixed;
   width: 30px;
   height: 25px;

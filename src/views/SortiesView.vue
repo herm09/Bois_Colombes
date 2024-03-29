@@ -3,17 +3,6 @@
 export default {
   name: 'SortiesView',
 }
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 </script>
 
 
@@ -386,28 +375,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-  }
-
-  #scroll_top {
-    position: fixed;
-    width: 30px;
-    height: 25px;
-    bottom: 31px;
-    right: 150px;
-      
-    button {
-      background-color: #FBBA00;
-      border: none;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      cursor: pointer;
-      width: 50px;
-      height: 230%;
-        
-      img {
-        width: 40px;
-      }
-    }
   }
 }
 
