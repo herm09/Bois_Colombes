@@ -186,6 +186,7 @@ export default {
       <ScrollToTop />
 
     </footer>
+    
 </template>
 
 <style scoped lang="scss">
@@ -395,13 +396,14 @@ export default {
     margin-bottom: 20px;
 
     h2 {
-      font-family: 'Raleway';
+      display: flex;
+      font-family: "Raleway";
       font-size: 23px;
       font-weight: 700;
       text-transform: uppercase;
-      align-items: center;
       letter-spacing: 0.4px;
       margin-bottom: 40px;
+      justify-content: center;
     }
 
     .enLigne {

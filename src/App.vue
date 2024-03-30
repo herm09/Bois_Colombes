@@ -45,14 +45,6 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -65,6 +57,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-right: 70px;
+  font-family: 'Raleway';
+
 
   img {
     width: 50%; 
