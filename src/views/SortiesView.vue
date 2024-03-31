@@ -139,66 +139,6 @@ export default {
 
 /* --------------- HEADER --------------- */
 
-// header {
-//   height: 15vh;
-//   /*box-shadow: 0px 0px 10px 0px #89BAAD !important; */
-
-//   .menu {
-//     display: flex;
-//     height: 15vh;
-//     width: 100%;
-//     justify-content: space-between;
-//     align-items: center;
-//     font-family: 'Raleway';
-    
-//     .logo {
-//         display: flex;
-//         width: 120px;
-//         margin-left: 100px;
-//     }
-    
-//     ul {
-//       display: flex;
-//       gap: 80px;
-        
-//       li {
-//         font-size: 20px;
-//         list-style: none;
-
-//         a {
-//           text-decoration: none;
-//           font-weight: bolder;
-//           font-size: 25px;
-//           color: black;
-//           list-style: none;
-//           display: inline-block;
-//           padding-bottom:2px; /*the space for the gradient*/
-//           background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)) center bottom; /*OR bottom right OR bottom left*/
-//           background-size: 0% 2px; /*width:0% height:2px*/
-//           background-repeat:no-repeat; /* Don't repeat !!*/
-//           transition: all 0.45s;
-
-//           &:hover {
-//             background-size: 100% 2px; /*width:100% height:2px*/
-//           }
-//         }
-//       }
-//     }
-    
-//     .links {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       margin-right: 150px;
-//       gap: 20px;
-
-//       .zoom {
-//           height: 45px;
-//       }
-//     }
-//   }
-// }
-
 .hrHead {
   border-bottom: 3px solid #89BAAD;
 }
@@ -236,12 +176,16 @@ export default {
         font-family: 'Raleway';
         font-size: 30px;
         text-transform: uppercase;
+        margin-bottom: 25px;
+        font-weight: 700
       }
     }
 
     .hrSorties {
       border: 2px solid #070707;
-      width: 83%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 84%;
     }
 
     

@@ -7,6 +7,7 @@ export default {
 
 
 <template>
+  <hr class="hrHead">
     <section class="imgActus">
         <img src="@/assets/actus_bois_colombes.png" alt="Actualités de Bois-Colombes">
     </section>
@@ -192,6 +193,10 @@ export default {
 <style scoped lang="scss">
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.hrHead {
+  border-bottom: 3px solid #89BAAD;
+}
 
 /* BODY */
 
