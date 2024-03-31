@@ -310,7 +310,6 @@ export default {
                 font-family: 'Rubik', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 400;
-                line-height: 1.5;
                 text-align: justify;
                 width: 70%;
             }
@@ -337,7 +336,6 @@ export default {
                 font-family: 'Rubik', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 400;
-                line-height: 1.5;
                 margin-right: 20px;
                 margin-left: 140px;
                 width: 70%;
@@ -349,12 +347,11 @@ export default {
             justify-content: center;
             margin-top: 20px;
             gap: 90px;
+            height: 29vh;
 
             .portail {
                 display: flex;
                 flex-direction: column;
-                font-size: 1rem;
-                font-weight: 400;
                 width: 25%;
                 height: 140%;
                 background-color: #d3dedb;
@@ -364,7 +361,7 @@ export default {
 
                 h3 {
                     font-family: 'Raleway';
-                    font-size: 18px;
+                    font-size: 1.3rem;
                     font-weight: 700;
                     text-transform: uppercase;
                     margin-bottom: 20px;
@@ -373,15 +370,13 @@ export default {
                 p {
                     font-family: 'Rubik', sans-serif;
                     font-weight: 400;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                 }
             }
 
             .service {
                 display: flex;
                 flex-direction: column;
-                font-size: 1rem;
-                font-weight: 400;
                 width: 25%;
                 height: 140%;
                 background-color: #d3dedb;
@@ -391,7 +386,7 @@ export default {
 
                 h3 {
                     font-family: 'Raleway';
-                    font-size: 17px;
+                    font-size: 1.3rem;
                     font-weight: 700;
                     text-transform: uppercase;
                     margin-bottom: 20px;
@@ -400,7 +395,7 @@ export default {
                 p {
                     font-family: 'Rubik', sans-serif;
                     font-weight: 400;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     width: 80%;
                 }
             }
