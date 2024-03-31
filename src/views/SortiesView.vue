@@ -172,7 +172,7 @@ export default {
 
       h1 {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 2rem;
         font-family: 'Raleway';
         font-size: 30px;
         text-transform: uppercase;
@@ -191,10 +191,6 @@ export default {
     
   }
 
-  // .hrSorties {
-  //     border: 3px solid #070707;
-  // }
-
   .DivCatalogue {
     display: flex;
     flex-direction: column;
@@ -212,7 +208,7 @@ export default {
       h2 {
         display: flex;
         font-family: 'Raleway';
-        font-size: 23px;
+        font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
         align-items: center;
@@ -231,7 +227,7 @@ export default {
       p {
         display: flex;
         text-align: start;
-        font-size: 18px;
+        font-size: 1.2rem;
         width: 600px;
         line-height: 1.2;
       }
@@ -264,7 +260,7 @@ export default {
       h2 {
         display: flex;
         font-family: 'Raleway';
-        font-size: 23px;
+        font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
         align-items: center;
@@ -282,7 +278,7 @@ export default {
       p {
         display: flex;
         text-align: start;
-        font-size: 18px;
+        font-size: 1.2rem;
         width: 555px;
         font-weight: 400;
         line-height: 1.2;
@@ -303,159 +299,159 @@ export default {
 /* --------------- FOOTER --------------- */
 
 .footer {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  .footer1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 45vh;
-    background-color: #1F266B;
-    color: #FFFFFF;
-    font-size: 15px;
+    .footer1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 45vh;
+        background-color: #1F266B;
+        color: #FFFFFF;
+        font-size: 15px;
 
-    .coordonnees {
-      grid-column: 1 / 2;
-      align-self: flex-start;
-      justify-self: center;
-      margin-top: 20px;
-  
-      h2 {
-        font-size: 20px;
-        font-family: 'Raleway';
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-bottom: 15px;
-        text-decoration: underline;
-        text-decoration-color: #FBBA00;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 5px;
-        margin-bottom: 20px;
-      }
-  
-      ul {
-        display: flex;
-        flex-direction: column;
-        list-style: inside;
-        font-family: 'Rubik', sans-serif;
-        font-size: 16px;
-        gap: 30px;
-        align-items: start;
-  
-        li {
-          gap: 20px;
+        .coordonnees {
+        grid-column: 1 / 2;
+        align-self: flex-start;
+        justify-self: center;
+        margin-top: 20px;
+    
+        h2 {
+            font-size: 1.5rem;
+            font-family: 'Raleway';
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-color: #FBBA00;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 5px;
+            margin-bottom: 20px;
         }
-  
-        li::marker {
-          color: rgb(251, 251, 251);
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: inside;
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.2rem;
+            gap: 30px;
+            align-items: start;
+    
+            li {
+            gap: 20px;
+            }
+    
+            li::marker {
+            color: rgb(251, 251, 251);
+            }
         }
-      }
+        }
+    
+        .autre {
+        grid-column: 2 / 3;
+        align-self: flex-start;
+        justify-self: center;
+        margin-top: 20px;
+    
+        h2 {
+            font-size: 1.5rem;
+            font-family: 'Raleway';
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-color: #FBBA00;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 5px;
+            margin-bottom: 20px;
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: inside;
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.2rem;
+            gap: 30px;
+            align-items: start;
+    
+            li::marker {
+            color: rgb(251, 251, 251);
+            }
+        }
+        }
+    
+        .suivre {
+        grid-column: 3 / 4;
+        align-self: flex-start;
+        justify-self: center;
+        margin-top: 20px;
+    
+        h2 {
+            font-size: 20px;
+            font-family: 'Raleway';
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-decoration: underline;
+            text-decoration-color: #FBBA00;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 5px;
+            margin-bottom: 20px;
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: inside;
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.2rem;
+            gap: 30px;
+            align-items: start;
+            justify-content: center;
+    
+            li::marker {
+            color: rgb(251, 251, 251);
+            }
+        }
+        }
     }
-  
-    .autre {
-      grid-column: 2 / 3;
-      align-self: flex-start;
-      justify-self: center;
-      margin-top: 20px;
-  
-      h2 {
-        font-size: 20px;
-        font-family: 'Raleway';
+
+    .footer2 {
+        height: 10vh;
+        width: 100%;
+        background-color: #89BAAD;
+        font-size: 1.3rem;
+        font-family: 'Rubik', sans-serif;
         text-transform: uppercase;
         font-weight: bold;
-        margin-bottom: 15px;
-        text-decoration: underline;
-        text-decoration-color: #FBBA00;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 5px;
-        margin-bottom: 20px;
-      }
-  
-      ul {
+        color: #1F266B;
+
+        div {
         display: flex;
-        flex-direction: column;
-        list-style: inside;
-        font-family: 'Rubik', sans-serif;
-        font-size: 16px;
-        gap: 30px;
-        align-items: start;
-  
-        li::marker {
-          color: rgb(251, 251, 251);
-        }
-      }
-    }
-  
-    .suivre {
-      grid-column: 3 / 4;
-      align-self: flex-start;
-      justify-self: center;
-      margin-top: 20px;
-  
-      h2 {
-        font-size: 20px;
-        font-family: 'Raleway';
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-bottom: 15px;
-        text-decoration: underline;
-        text-decoration-color: #FBBA00;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 5px;
-        margin-bottom: 20px;
-      }
-  
-      ul {
-        display: flex;
-        flex-direction: column;
-        list-style: inside;
-        font-family: 'Rubik', sans-serif;
-        font-size: 16px;
-        gap: 30px;
-        align-items: start;
         justify-content: center;
-  
-        li::marker {
-          color: rgb(251, 251, 251);
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+
+        ul {
+            display: flex;
+            margin-left: 100px;
+            margin-right: 100px;
+            gap: 160px;
+    
+            li {
+            display: flex;
+            list-style: none;
+            }
         }
-      }
-    }
-  }
-
-  .footer2 {
-    height: 10vh;
-    width: 100%;
-    background-color: #89BAAD;
-    font-size: 18px;
-    font-family: 'Rubik', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #1F266B;
-
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-content: space-around;
-      height: 100%;
-
-      ul {
-        display: flex;
-        margin-left: 100px;
-        margin-right: 100px;
-        gap: 160px;
-  
-        li {
-          display: flex;
-          list-style: none;
         }
-      }
     }
-  }
 
-  .scroll {
-    height: 7.2vh;
-  }
+    .scroll {
+        height: 7.2vh;
+    }
 }
 
 </style>

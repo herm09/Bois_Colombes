@@ -292,7 +292,7 @@ export default {
 
             h1 {
                 text-align: center;
-                margin-top: 20px;
+                margin-top: 2rem;
                 font-family: 'Raleway';
                 font-size: 30px;
                 font-weight: 700;
@@ -315,7 +315,7 @@ export default {
             h2 {
                 display: flex;
                 font-family: 'Raleway';
-                font-size: 26px;
+                font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
@@ -327,8 +327,7 @@ export default {
                 justify-content: center;
                 text-align: start;
                 font-family: 'Rubik', sans-serif;
-                font-size: 18px;
-                line-height: 1.2;
+                font-size: 1.2rem;
                 width: 80%;
             }
         }
@@ -342,7 +341,7 @@ export default {
                 display: flex;
                 justify-content: center;
                 font-family: 'Raleway';
-                font-size: 23px;
+                font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
@@ -367,9 +366,8 @@ export default {
                     font-family: 'Rubik', sans-serif;
                     border-radius: 10px;
                     margin-left: 5%;
-                    font-size: 18px;
+                    font-size: 1.2rem;
                     text-align: start;
-                    line-height: 1.2;
                     background-color: #dfdbdb;
                     width: 15%;
                     height: 13vh;
@@ -382,7 +380,7 @@ export default {
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 20px;
+                margin-top: 1.2rem;
             }
         }
     }
@@ -396,7 +394,7 @@ export default {
             display: flex;
             font-family: 'Raleway';
             margin-left: 140px;
-            font-size: 26px;
+            font-size: 1.5rem;
             font-weight: 700;
             text-transform: uppercase;
             align-items: center;
@@ -412,7 +410,7 @@ export default {
                 display: flex;
                 justify-content: center;
                 font-family: 'Raleway';
-                font-size: 23px;
+                font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
@@ -437,7 +435,7 @@ export default {
                     font-family: 'Rubik', sans-serif;
                     border-radius: 10px;
                     margin-left: 5%;
-                    font-size: 18px;
+                    font-size: 1.2rem;
                     text-align: start;
                     line-height: 1.2;
                     background-color: #dfdbdb;
@@ -452,7 +450,7 @@ export default {
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 20px;
+                margin-top: 1.2rem;
             }
         }
 
@@ -465,7 +463,7 @@ export default {
                 display: flex;
                 justify-content: center;
                 font-family: 'Raleway';
-                font-size: 23px;
+                font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
@@ -490,7 +488,7 @@ export default {
                     font-family: 'Rubik', sans-serif;
                     border-radius: 10px;
                     margin-left: 5%;
-                    font-size: 18px;
+                    font-size: 1.2rem;
                     text-align: start;
                     line-height: 1.2;
                     background-color: #dfdbdb;
@@ -505,7 +503,7 @@ export default {
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 20px;
+                margin-top: 1.2rem;
             }
         }
     }
@@ -519,7 +517,7 @@ export default {
             display: flex;
             font-family: 'Raleway';
             margin-left: 140px;
-            font-size: 26px;
+            font-size: 1.5rem;
             font-weight: 700;
             text-transform: uppercase;
             align-items: center;
@@ -535,7 +533,7 @@ export default {
                 display: flex;
                 justify-content: center;
                 font-family: 'Raleway';
-                font-size: 23px;
+                font-size: 1.2rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
@@ -562,7 +560,6 @@ export default {
                     margin-left: 5%;
                     font-size: 18px;
                     text-align: start;
-                    line-height: 1.2;
                     background-color: #dfdbdb;
                     width: 15%;
                     height: 13vh;
@@ -575,7 +572,7 @@ export default {
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 20px;
+                margin-top: 1.2rem;
             }
         }
     }
@@ -602,7 +599,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 20px;
+            font-size: 1.5rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -619,7 +616,7 @@ export default {
             flex-direction: column;
             list-style: inside;
             font-family: 'Rubik', sans-serif;
-            font-size: 16px;
+            font-size: 1.2rem;
             gap: 30px;
             align-items: start;
     
@@ -640,7 +637,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 20px;
+            font-size: 1.5rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -657,7 +654,7 @@ export default {
             flex-direction: column;
             list-style: inside;
             font-family: 'Rubik', sans-serif;
-            font-size: 16px;
+            font-size: 1.2rem;
             gap: 30px;
             align-items: start;
     
@@ -678,7 +675,7 @@ export default {
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
             text-decoration: underline;
             text-decoration-color: #FBBA00;
             text-decoration-thickness: 2px;
@@ -691,7 +688,7 @@ export default {
             flex-direction: column;
             list-style: inside;
             font-family: 'Rubik', sans-serif;
-            font-size: 16px;
+            font-size: 1.2rem;
             gap: 30px;
             align-items: start;
             justify-content: center;
@@ -707,7 +704,7 @@ export default {
         height: 10vh;
         width: 100%;
         background-color: #89BAAD;
-        font-size: 18px;
+        font-size: 1.3rem;
         font-family: 'Rubik', sans-serif;
         text-transform: uppercase;
         font-weight: bold;

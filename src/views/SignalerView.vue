@@ -109,7 +109,7 @@ export default {
       </section>
 
       <section class="form">
-        <h1>Formulaire de demande d'inscription en ligne</h1>
+        <h2>Formulaire de demande d'inscription en ligne</h2>
         <div class="donnees">
           <h3>Informatisation de vos données personnelles</h3>
           <p>Les informations receuillies sur ce formulaire 
@@ -136,10 +136,8 @@ export default {
           <div class="coordonnees">
             <h2>Coordonnées</h2>
             <ul>
-              <li><a>Direction de l'Action Sociale</a><br>
-                  Espace Duflos</li>
-              <li>79, rue Charles-Duflos <br> 
-                  92270 Bois-Colombes</li>
+              <li><a>Direction de l'Action Sociale</a><br>Espace Duflos</li>
+              <li>79, rue Charles-Duflos <br> 92270 Bois-Colombes</li>
               <li>01 41 19 83 05</li>
               <li>ccas@bois-colombes.com</li>
           </ul>
@@ -159,12 +157,9 @@ export default {
           <div class="suivre">
             <h2>Suivez-nous autrement</h2>
             <ul>
-              <li>Sur bois-co mobile <br>
-                  La ville dans votre poche</li>
-              <li>Newsletter <br>
-                  Recevez les informations par mail</li>
-              <li>Service SMS <br>
-                  Recevez les alertes sur votre smartphone</li>
+              <li>Sur bois-co mobile <br> La ville dans votre poche</li>
+              <li>Newsletter <br> Recevez les informations par mail</li>
+              <li>Service SMS <br> Recevez les alertes sur votre smartphone</li>
               <li>Sur les réseaux</li>
             </ul>
           </div>
@@ -227,7 +222,7 @@ export default {
       text-align: center;
       margin-top: 30px;
       font-family: 'Raleway';
-      font-size: 30px;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
     }
@@ -250,7 +245,7 @@ export default {
     h2 {
       display: flex;
       font-family: 'Raleway';
-      font-size: 23px;
+      font-size: 1.5rem;
       font-weight: 700;
       text-transform: uppercase;
       align-items: center;
@@ -274,13 +269,12 @@ export default {
         font-family: 'Rubik', sans-serif;
         text-align: start;
         margin-top: 50px;
-        font-size: 16px;
+        font-size: 1.2rem;
         width: 340px;
         gap: 2px;
 
         li {
           gap: 20px;
-          font-size: 18px;
           width: 330px;
           line-height: 1.2;
         }
@@ -307,7 +301,7 @@ export default {
       font-weight: 400;
 
       p {
-        font-size: 18px;
+        font-size: 1.2rem;
         text-align: start;
         margin-left: 210px;
         font-family: 'Rubik', sans-serif;
@@ -326,7 +320,6 @@ export default {
 
         li {
           gap: 20px;
-          font-size: 18px;
           width: 330px;
           line-height: 1.2;
         }
@@ -354,7 +347,7 @@ export default {
 
       h3 {
         font-family: 'Raleway';
-        font-size: 23px;
+        font-size: 1.3rem;
         font-weight: 700;
         text-transform: uppercase;
         align-items: center;
@@ -363,7 +356,7 @@ export default {
 
       p {
         font-family: 'Rubik', sans-serif;
-        font-size: 18px;
+        font-size: 1.2rem;
         color: white;
       }
 
@@ -378,7 +371,7 @@ export default {
         background-color: #FBBA00;
         color: black;
         font-family: 'Rubik', sans-serif;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 700;
         text-transform: uppercase;
         padding: 10px 20px;
@@ -403,7 +396,7 @@ export default {
     h2 {
       display: flex;
       font-family: "Raleway";
-      font-size: 23px;
+      font-size: 1.5rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.4px;
@@ -428,14 +421,14 @@ export default {
         display: flex;
         font-family: 'Raleway';
         margin-left: 60px;
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 20px;
       }
 
       p {
-        font-size: 18px;
+        font-size: 1.2rem;
         text-align: start;
         margin-left: 60px;
         font-family: 'Rubik', sans-serif;
@@ -467,11 +460,11 @@ export default {
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-left: 20px;
+        margin-left: 1.3rem;
       }
 
       p {
-        font-size: 18px;
+        font-size: 1.2rem;
         text-align: start;
         margin-left: 20px;
         font-family: 'Rubik', sans-serif;
@@ -488,7 +481,7 @@ export default {
       h4 {
         font-family: 'Raleway';
         color: #1F266B;
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 700;
         text-transform: uppercase;
         margin-left: 20px;
@@ -498,7 +491,7 @@ export default {
       h5 {
         font-family: 'Raleway';
         color: #1F266B;
-        font-size: 17px;
+        font-size: 1rem;
         font-weight: 700;
         text-transform: uppercase;
         margin-left: 20px;
@@ -506,7 +499,7 @@ export default {
       }
 
       p {
-        font-size: 18px;
+        font-size: 1.2rem;
         text-align: start;
         margin-left: 20px;
         font-family: 'Rubik', sans-serif;
@@ -537,7 +530,7 @@ export default {
       margin-top: 20px;
   
       h2 {
-        font-size: 20px;
+        font-size: 1.5rem;
         font-family: 'Raleway';
         text-transform: uppercase;
         font-weight: bold;
@@ -554,7 +547,7 @@ export default {
         flex-direction: column;
         list-style: inside;
         font-family: 'Rubik', sans-serif;
-        font-size: 16px;
+        font-size: 1.2rem;
         gap: 30px;
         align-items: start;
   
@@ -575,7 +568,7 @@ export default {
       margin-top: 20px;
   
       h2 {
-        font-size: 20px;
+        font-size: 1.5rem;
         font-family: 'Raleway';
         text-transform: uppercase;
         font-weight: bold;
@@ -592,7 +585,7 @@ export default {
         flex-direction: column;
         list-style: inside;
         font-family: 'Rubik', sans-serif;
-        font-size: 16px;
+        font-size: 1.2rem;
         gap: 30px;
         align-items: start;
   
@@ -613,7 +606,7 @@ export default {
         font-family: 'Raleway';
         text-transform: uppercase;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
         text-decoration: underline;
         text-decoration-color: #FBBA00;
         text-decoration-thickness: 2px;
@@ -626,7 +619,7 @@ export default {
         flex-direction: column;
         list-style: inside;
         font-family: 'Rubik', sans-serif;
-        font-size: 16px;
+        font-size: 1.2rem;
         gap: 30px;
         align-items: start;
         justify-content: center;
@@ -642,7 +635,7 @@ export default {
     height: 10vh;
     width: 100%;
     background-color: #89BAAD;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
     font-weight: bold;

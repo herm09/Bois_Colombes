@@ -122,11 +122,11 @@ export default {
                         des personnes âgées et de leur famille
                     </h3>
                     <p>
-                        Comment évaluer la perte d'autonomie ?
-                        Ce sont des professionnels qui évaluent la 
-                        perte d'autonomie : équipe médico-sociale 
-                        APA ou médecin coordonateur.
-                        Lire la suite sur le site 
+                        Comment évaluer la perte d'autonomie ? <br>
+                        Ce sont des professionnels qui évaluent <br> la 
+                        perte d'autonomie : équipe médico-<br>sociale 
+                        APA ou médecin coordonateur. <br>
+                        Lire la suite sur le site <br>
                         pour-les-personnes-agees.gouv.fr
                     </p>
                 </div>
@@ -219,14 +219,16 @@ export default {
 .aide {
     display: flex;
     flex-direction: column;
-    height: 210vh;
+    height: 250vh;
 
     h1 {
         font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
         font-size: 2rem;
         font-weight: 700;
         text-align: center;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .assistance {
@@ -237,7 +239,7 @@ export default {
         h2 {
             display: flex;
             font-family: 'Raleway';
-            font-size: 23px;
+            font-size: 1.5rem;
             font-weight: 700;
             text-transform: uppercase;
             align-items: center;
@@ -248,8 +250,9 @@ export default {
 
         h3 {
             display: flex;
+            color: #1F266B;
             font-family: 'Raleway';
-            font-size: 18px;
+            font-size: 1.3rem;
             font-weight: 700;
             text-transform: uppercase;
             align-items: center;
@@ -265,7 +268,7 @@ export default {
 
             p {
                 font-family: 'Rubik', sans-serif;
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: 400;
                 line-height: 1.5;
                 margin-right: 20px;
@@ -282,12 +285,12 @@ export default {
         .ressources {
             display: flex;
             flex-direction: column;
-            margin-top: 20px;
+            margin-top: 40px;
             margin-left: 140px;
 
             h2 {
                 font-family: 'Raleway';
-                font-size: 23px;
+                font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.4px;
@@ -296,7 +299,8 @@ export default {
 
             h3 {
                 font-family: 'Raleway';
-                font-size: 18px;
+                color: #1F266B;
+                font-size: 1.3rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.4px;
@@ -304,21 +308,23 @@ export default {
 
             p {
                 font-family: 'Rubik', sans-serif;
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: 400;
                 line-height: 1.5;
                 text-align: justify;
-                width: 40%;
+                width: 70%;
             }
         }
 
         .allocations {
-            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
 
             h2 {
                 display: flex;
                 font-family: 'Raleway';
-                font-size: 23px;
+                font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
@@ -329,7 +335,7 @@ export default {
 
             p {
                 font-family: 'Rubik', sans-serif;
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: 400;
                 line-height: 1.5;
                 margin-right: 20px;
@@ -347,13 +353,14 @@ export default {
             .portail {
                 display: flex;
                 flex-direction: column;
-                font-family: 'Rubik', sans-serif;
                 font-size: 1rem;
                 font-weight: 400;
                 width: 25%;
                 height: 140%;
                 background-color: #d3dedb;
                 border-radius: 15px;
+                align-items: center;
+                justify-content: center;
 
                 h3 {
                     font-family: 'Raleway';
@@ -362,26 +369,39 @@ export default {
                     text-transform: uppercase;
                     margin-bottom: 20px;
                 }
+
+                p {
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                }
             }
 
             .service {
                 display: flex;
                 flex-direction: column;
-                font-family: 'Rubik', sans-serif;
                 font-size: 1rem;
                 font-weight: 400;
                 width: 25%;
                 height: 140%;
                 background-color: #d3dedb;
                 border-radius: 15px;
+                align-items: center;
+                justify-content: center;
 
                 h3 {
                     font-family: 'Raleway';
-                    font-size: 18px;
+                    font-size: 17px;
                     font-weight: 700;
                     text-transform: uppercase;
-                    letter-spacing: 0.4px;
                     margin-bottom: 20px;
+                }
+
+                p {
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    width: 80%;
                 }
             }
         }

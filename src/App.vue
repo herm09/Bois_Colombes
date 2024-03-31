@@ -17,19 +17,20 @@ export default {
 
   <header>
     <div class="menu">
-      <router-link to="/accueil"><img src="@/assets/logo_ccas.png" alt="Logo CCAS" class="logo"></router-link>
+      <router-link to="/accueil"><img src="@/assets/logo_ccas.png" alt="Logo du CCAS"></router-link>
       
       <nav>
-        <router-link to="/accueil">Accueil</router-link>
-        <router-link to="/signaler">Se Signaler</router-link>
-        <router-link to="/sorties">Sorties</router-link>
-        <router-link to="/residences">Résidences</router-link>
-        <router-link to="/aide">Se faire aider</router-link>
+        <router-link to="/accueil"><a>Accueil</a></router-link>
+        <router-link to="/signaler"><a>Se Signaler</a></router-link>
+        <router-link to="/sorties"><a>Sorties</a></router-link>
+        <router-link to="/residences"><a>Résidences</a></router-link>
+        <router-link to="/aide"><a>Se faire aider</a></router-link>
       </nav>
 
       <div class="links">
         <img src="@/assets/zoom.png" alt="Agrandir" class="zoom">
       </div>
+      
     </div>
   </header>
 
@@ -57,34 +58,34 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-right: 70px;
+  margin-left: 70px;
   font-family: 'Raleway';
 
-
-  img {
+  img { /* LOGO */ 
     width: 50%; 
   }
 
   nav {
     display: flex;
-    justify-content: space-between;
+    gap: 70px;
     align-items: center;
-    width: 50%;
+    width: 61%;
 
     a {
       text-decoration: none;
-      font-weight: bolder;
-      font-size: 25px;
+      font-weight: bold;
+      font-size: 1.7rem;
       color: black;
       list-style: none;
       display: inline-block;
       padding-bottom:2px; /*the space for the gradient*/
       background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)) center bottom; /*OR bottom right OR bottom left*/
-      background-size: 0% 2px; /*width:0% height:2px*/
-      background-repeat:no-repeat; /* Don't repeat !!*/
+      background-size: 0% 2px;
+      background-repeat:no-repeat;
       transition: all 0.45s;
 
       &:hover {
-        background-size: 100% 2px; /*width:100% height:2px*/
+        background-size: 100% 2px;
       }
     }
   }
