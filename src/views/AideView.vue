@@ -219,7 +219,7 @@ export default {
 .aide {
     display: flex;
     flex-direction: column;
-    height: 240vh;
+    height: 250vh;
 
     h1 {
         font-family: 'Raleway', sans-serif;

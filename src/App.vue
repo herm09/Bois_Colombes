@@ -1,10 +1,12 @@
 <script>
 import ScrollToTop from './components/ScrollToTop.vue'
+import DownloadFile from './components/Download.vue'
 
 export default {
   name: "App",
   components: {
-    ScrollToTop
+    ScrollToTop,
+    DownloadFile
   },
   setup() {
     return{}
@@ -33,6 +35,10 @@ export default {
       
     </div>
   </header>
+
+  <section>
+    <DownloadFile />
+  </section>
 
   <section class="app-container" id="scroll-to-top">
     <ScrollToTop />
@@ -76,16 +82,14 @@ export default {
       font-weight: bold;
       font-size: 1.7rem;
       color: black;
-      list-style: none;
-      display: inline-block;
-      padding-bottom:2px; /*the space for the gradient*/
+      // padding-bottom:2px; /*the space for the gradient*/
       background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)) center bottom; /*OR bottom right OR bottom left*/
-      background-size: 0% 2px;
+      background-size: 0% 3px;
       background-repeat:no-repeat;
       transition: all 0.45s;
 
       &:hover {
-        background-size: 100% 2px;
+        background-size: 100% 3px;
       }
     }
   }

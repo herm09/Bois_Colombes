@@ -2,7 +2,10 @@
 // @ is an alias to /src
 export default {
   name: 'SignalerView',
-}
+  setup() {
+    return{}
+  }
+};
 </script>
 
 
@@ -56,7 +59,9 @@ export default {
           <p>Contrat individuel d'accompagnement</p>
           <div class="download">
             <hr class="hrDownload1">
+            <a href="@/assets/Contrat_Individuel_Accompagnement-Fev20202.p" download="https://www.bois-colombes.fr/wp-content/uploads/2021/06/Contrat_Individuel_Accompagnement-Fev20202.pdf">Télécharger</a>
             <button>Télécharger</button>
+            <DownloadFile />
             <hr class="hrDownload2">
           </div>
         </div>
@@ -486,17 +491,17 @@ export default {
         }
 
         button {
-        background-color: #FBBA00;
-        color: black;
-        font-family: 'Rubik', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        }
+          background-color: #FBBA00;
+          color: black;
+          font-family: 'Rubik', sans-serif;
+          font-size: 1.2rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          }
 
         .hrDownload2 {
           border: 2px solid #FBBA00;
