@@ -35,7 +35,7 @@ export default {
                     <p>
                         19, rue André-Chénier <br>
                         Tél : 01 47 80 40 89 <br>
-                        Site internet :
+                        <a href="https://www.hautsdeseinehabitat.fr/patrimoine/residence-andre-chenier">Site internet</a>
                     </p>
                 </div>
                 <p>Construite au cœur d'un grand parc privé, arboré 
@@ -82,7 +82,7 @@ export default {
                     <p>
                         17, avenue Charles-de-Gaulle <br>
                         Tél : 01 47 86 57 00 <br>
-                        Couriel :
+                        Couriel : residence.bois-colombes@bellan.fr
                     </p>
                 </div>
                 <p>
@@ -132,8 +132,8 @@ export default {
                     <p>
                         3, rue Carnot <br>
                         Tél : 01 56 05 61 40 <br>
-                        Couriel :
-                        Site internet :
+                        Couriel : saintemarthe@isatis.asso.fr
+                        <a href="https://isatis.asso.fr/sainte-marthe/">Site internet</a>
                     </p>
                 </div>
                 <p>
@@ -361,9 +361,7 @@ export default {
 
                 p { /* Infos résidence */
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Rubik", sans-serif;
                     border-radius: 10px;
                     margin-left: 5%;
                     font-size: 1.2rem;
@@ -371,6 +369,8 @@ export default {
                     background-color: #dfdbdb;
                     width: 15%;
                     height: 13vh;
+                    flex-direction: column;
+                    justify-content: center;
                 }
             }
 
