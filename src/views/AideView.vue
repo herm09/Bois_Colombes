@@ -14,8 +14,8 @@ export default {
         <h1>Se faire aider (mrc, aide à domicile, grille aggir, ...)</h1>
 
         <section class="assistance">
-            <h2>Téléassistance, portage de repas, aide à domicile</h2>
-            <h3>Avec le CCAS</h3>
+            <h2 class="assistTitle">Téléassistance, portage de repas, aide à domicile</h2>
+            <h3 class="assistTitle2">Avec le CCAS</h3>
 
             <div class="assistTxt">
                 <p>
@@ -236,7 +236,7 @@ export default {
         flex-direction: column;
         margin-top: 20px;
 
-        h2 {
+        .assistTitle {
             display: flex;
             font-family: 'Raleway';
             font-size: 1.5rem;
@@ -244,11 +244,11 @@ export default {
             text-transform: uppercase;
             align-items: center;
             letter-spacing: 0.4px;
-            margin-left: 140px;
+            margin-left: 210px;
             margin-bottom: 20px;
         }
 
-        h3 {
+        .assistTitle2 {
             display: flex;
             color: #1F266B;
             font-family: 'Raleway';
@@ -256,14 +256,14 @@ export default {
             font-weight: 700;
             text-transform: uppercase;
             align-items: center;
-            margin-left: 140px;
+            margin-left: 210px;
         }
 
         .assistTxt {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20%;
+            gap: 14%;
 
             p {
                 font-family: 'Rubik', sans-serif;
@@ -283,7 +283,7 @@ export default {
             display: flex;
             flex-direction: column;
             margin-top: 40px;
-            margin-left: 140px;
+            margin-left: 210px;
 
             h2 {
                 font-family: 'Raleway';
@@ -321,7 +321,7 @@ export default {
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
-                margin-left: 140px;
+                margin-left: 210px;
                 margin-bottom: 20px;
             }
 
@@ -330,7 +330,7 @@ export default {
                 font-size: 1.2rem;
                 font-weight: 400;
                 margin-right: 20px;
-                margin-left: 140px;
+                margin-left: 210px;
                 width: 70%;
             }
         }
@@ -340,7 +340,7 @@ export default {
             justify-content: center;
             margin-top: 20px;
             gap: 90px;
-            height: 29vh;
+            height: 30vh;
 
             .portail {
                 display: flex;

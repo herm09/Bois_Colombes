@@ -74,7 +74,7 @@ export default {
         </section>
 
         <section class="medical">
-            <h2>Les résidences médicalisées</h2>
+            <h2 class="medicalTitle">Les résidences médicalisées</h2>
             <div class="appart2">
                 <h2>La résidence Léopold-Bellan</h2>
                 <div class="leopold">
@@ -162,7 +162,7 @@ export default {
         </section>
 
         <section class="specials">
-            <h2>Les établissements spécialisés</h2>
+            <h2 class="specialsTitle">Les établissements spécialisés</h2>
             <div class="appart4">
                 <h2>Les Camélias</h2>
                 <div class="camelias">
@@ -273,7 +273,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 99.7%;
-    height: 470vh;
+    height: 530vh;
 
     .appartsHead {
         display: flex;
@@ -292,9 +292,9 @@ export default {
 
             h1 {
                 text-align: center;
-                margin-top: 2rem;
                 font-family: 'Raleway';
-                font-size: 30px;
+                margin-top: 10px;
+                font-size: 2rem;
                 font-weight: 700;
                 text-transform: uppercase;
             }
@@ -308,11 +308,11 @@ export default {
         .seniorTitle {
             display: flex;
             flex-direction: column;
-            margin-left: 140px;
+            margin-left: 210px;
             height: 13vh;
             gap: 20px;
 
-            h2 {
+            h2 { /* Titre Les résidences pour personnes âgées */
                 display: flex;
                 font-family: 'Raleway';
                 font-size: 1.5rem;
@@ -328,16 +328,17 @@ export default {
                 text-align: start;
                 font-family: 'Rubik', sans-serif;
                 font-size: 1.2rem;
-                width: 80%;
+                width: 85%;
             }
         }
 
-        .appart1 {
+        .appart1 { /* Résidence André-Chénier */
             display: flex;
             flex-direction: column;
-            margin-top: 40px;
+            justify-content: center;
+            height: 140vh;
 
-            h2 {
+            h2 { /* LA RÉSIDENCE ANDRÉ-CHÉNIER */
                 display: flex;
                 justify-content: center;
                 font-family: 'Raleway';
@@ -345,7 +346,6 @@ export default {
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
-                letter-spacing: 0.4px;
             }
 
             .andre {
@@ -359,7 +359,7 @@ export default {
                     height: 450px;
                 }
 
-                p {
+                p { /* Infos résidence */
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -374,13 +374,14 @@ export default {
                 }
             }
 
-            p {
+            p { /* Texte description */
                 display: flex;
                 font-family: 'Rubik', sans-serif;
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 1.2rem;
+                font-size: 1.2rem;
+                margin-top: 20px
             }
         }
     }
@@ -390,37 +391,36 @@ export default {
         flex-direction: column;
         margin-top: 30px;
 
-        h2 {
+        .medicalTitle { /* Titre Les résidences médicalisées */
             display: flex;
             font-family: 'Raleway';
-            margin-left: 140px;
             font-size: 1.5rem;
             font-weight: 700;
             text-transform: uppercase;
             align-items: center;
-            letter-spacing: 0.4px;
+            margin-left: 210px;
         }
 
         .appart2 {
             display: flex;
             flex-direction: column;
-            margin-top: 40px;
+            justify-content: center;
+            height: 140vh;
 
-            h2 {
+            h2 { /* LA RÉSIDENCE LÉOPOLD-BELLAN */
                 display: flex;
                 justify-content: center;
                 font-family: 'Raleway';
                 font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
-                align-items: center;
-                letter-spacing: 0.4px;
+                align-items: center; 
             }
 
             .leopold {
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 80px;
                 margin-top: 20px;
                 justify-content: center;
 
@@ -437,7 +437,6 @@ export default {
                     margin-left: 5%;
                     font-size: 1.2rem;
                     text-align: start;
-                    line-height: 1.2;
                     background-color: #dfdbdb;
                     width: 15%;
                     height: 13vh;
@@ -450,7 +449,8 @@ export default {
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 1.2rem;
+                font-size: 1.2rem;
+                margin-top: 20px
             }
         }
 
@@ -458,16 +458,16 @@ export default {
             display: flex;
             flex-direction: column;
             margin-top: 40px;
+            height: 100vh;
 
-            h2 {
+            h2 { /* LA RÉSIDENCE STE-MARTHE */
                 display: flex;
                 justify-content: center;
-                font-family: 'Raleway';
+                font-family: "Raleway";
                 font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
-                letter-spacing: 0.4px;
             }
 
             .marthe {
@@ -503,7 +503,8 @@ export default {
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 1.2rem;
+                font-size: 1.2rem;
+                margin-top: 20px
             }
         }
     }
@@ -511,12 +512,12 @@ export default {
     .specials {
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 50px;
 
-        h2 {
+        .specialsTitle { /* Titre Les établissements spécialisés */
             display: flex;
             font-family: 'Raleway';
-            margin-left: 140px;
+            margin-left: 210px;
             font-size: 1.5rem;
             font-weight: 700;
             text-transform: uppercase;
@@ -528,16 +529,16 @@ export default {
             display: flex;
             flex-direction: column;
             margin-top: 40px;
+            height: 140vh;
 
-            h2 {
+            h2 { /* LES CAMÉLIAS */
                 display: flex;
                 justify-content: center;
-                font-family: 'Raleway';
-                font-size: 1.2rem;
+                font-family: "Raleway";
+                font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
-                letter-spacing: 0.4px;
             }
 
             .camelias {
@@ -572,7 +573,8 @@ export default {
                 width: 70%;
                 text-align: start;
                 align-self: center;
-                margin-top: 1.2rem;
+                font-size: 1.2rem;
+                margin-top: 20px
             }
         }
     }

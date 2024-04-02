@@ -187,8 +187,6 @@ export default {
       margin-right: auto;
       width: 84%;
     }
-
-    
   }
 
   .DivCatalogue {
@@ -196,9 +194,9 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 30px;
-    margin-left: 140px;
+    margin-left: 210px;
 
-    .catalogueTitle {
+    .catalogueTitle { /* TITRE Catalogue semestriel */
       display: flex;
 
       img {
@@ -246,7 +244,7 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-left: 140px;
+    margin-left: 210px;
     margin-bottom: 50px;
 
     .accessTitle {
@@ -264,7 +262,9 @@ export default {
         font-weight: 700;
         text-transform: uppercase;
         align-items: center;
-        text-align: start
+        text-align: start;
+        margin-left: 10px;
+        margin-top: 20px;
       }
     }
 
