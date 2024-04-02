@@ -167,7 +167,7 @@ export default {
             </div>
           </div>
 
-          <div class="confirm">
+          <div class="column4">
             <label for="che">
                 <input type="checkbox" name="" id="che">
                 <span>Cochez la case pour confirmer votre souhait *
@@ -672,7 +672,7 @@ export default {
       margin-left: auto;
       margin-right: auto;
       border-radius: 20px;
-      height: 80vh;
+      height: 100vh;
 
       h3 { /* INFORMATION DE VOS DONNÉES PERSONNELLES */
         font-family: 'Raleway';
@@ -694,7 +694,7 @@ export default {
       .input { /* Parties à remplir */
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 10px;
 
         .column1 {
           display: grid;
@@ -842,6 +842,20 @@ export default {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             margin-left: 6vw;
+          }
+        }
+
+        .column4 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-size: 1.2rem;
+          font-family: 'Rubik', sans-serif;
+
+          span {
+            margin-left: 10px;
           }
         }
       }

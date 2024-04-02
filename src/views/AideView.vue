@@ -282,7 +282,7 @@ export default {
         .ressources {
             display: flex;
             flex-direction: column;
-            margin-top: 40px;
+            justify-content: center;
             margin-left: 210px;
 
             h2 {
@@ -306,6 +306,7 @@ export default {
                 font-size: 1.2rem;
                 font-weight: 400;
                 width: 70%;
+                margin-top: 50px;
             }
         }
 

@@ -430,7 +430,6 @@ export default {
 
                 p {
                     display: flex;
-                    justify-content: center;
                     align-items: center;
                     font-family: 'Rubik', sans-serif;
                     border-radius: 10px;
@@ -438,7 +437,7 @@ export default {
                     font-size: 1.2rem;
                     text-align: start;
                     background-color: #dfdbdb;
-                    width: 15%;
+                    width: 13%;
                     height: 13vh;
                 }
             }
