@@ -219,7 +219,7 @@ export default {
 .aide {
     display: flex;
     flex-direction: column;
-    height: 250vh;
+    height: 240vh;
 
     h1 {
         font-family: 'Raleway', sans-serif;
@@ -338,7 +338,7 @@ export default {
         .lire {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 60px;
             gap: 90px;
             height: 30vh;
 
@@ -349,7 +349,6 @@ export default {
                 height: 140%;
                 background-color: #d3dedb;
                 border-radius: 15px;
-                align-items: center;
                 justify-content: center;
 
                 h3 {
@@ -358,12 +357,15 @@ export default {
                     font-weight: 700;
                     text-transform: uppercase;
                     margin-bottom: 20px;
+                    width: 70%;
+                    margin-left: 40px;
                 }
 
                 p {
                     font-family: 'Rubik', sans-serif;
                     font-weight: 400;
                     font-size: 1.2rem;
+                    margin-left: 40px;
                 }
             }
 

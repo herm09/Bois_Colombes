@@ -133,44 +133,37 @@ export default {
 
           <div class="input">
             <div class="column1">
-              <label for="name">Nom de Famille * 
-                  <input type="text" name="name" id="name" required>
-              </label>
+              <label for="name" class="label1">Nom de Famille *</label>
+              <input type="text" name="name" id="name" required>
 
-              <label for="firstname">Prénom * 
-                  <input type="text" name="firstname" id="firstname" required>
-              </label>
+              <label for="firstname" class="label2">Prénom *</label><br>
+              <input type="text" name="firstname" id="firstname" required>
 
-              <label for="birthday">Date de naissance * 
-                  <input type="date" name="birthday" id="birthday" required>
-              </label>
+              <label for="birthday" class="label3">Date de naissance *</label><br>
+              <input type="date" name="birthday" id="birthday" required>
             </div>
               
             <div class="column2">
-              <label for="address">Adresse * 
-                <input type="text" name="address" id="address" required>
-              </label>
+              <label for="address" class="label1">Adresse *</label><br>
+              <input type="text" name="address" id="address" required>
 
-              <label for="email">Email * 
-                  <input type="text" name="email" id="email" required>
-              </label>
+              <label for="email" class="label2">Email *</label><br>
+              <input type="text" name="email" id="email" required>
 
-              <label for="telephone">
-                  Téléphone * 
-                  <input type="text" name="telephone" id="telephone" required>
-              </label>
+              <label for="telephone" class="label3">Téléphone *</label><br>
+              <input type="text" name="telephone" id="telephone" required>
             </div>
             
             <div class="column3">
-              <label>
-                <input type="file" name="id" id="id" required>
-                <span>Joindre une copie de votre pièce d'identité</span>
-              </label>
+              <label for="id" class="id">Pièce d'identité</label>
+              <input type="file" name="id" id="id" required>
+                <!-- <span>Joindre une copie de votre pièce d'identité</span> -->
+              
 
-              <label>
-                  <input type="file" for="file" name="jd" id="jd" required>
-                  <span>Joindre une copie de votre justificatif de domicile</span>
-              </label>
+              <label for="jd" class="jd">Justificatif de domicile</label>
+              <input type="file" for="file" name="jd" id="jd" required>
+                  <!-- <span>Joindre une copie de votre justificatif de domicile</span> -->
+              
             </div>
           </div>
 
@@ -653,32 +646,35 @@ export default {
     }
   }
 
-  .formulaire {
+  .formulaire { /* SECTION FORMULAIRE */
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    height: 140vh;
 
-    h2 {
+    h2 { /* FORMULAIRE DE DEMANDE D'INSCRIPTION EN LIGNE */
       font-family: 'Raleway';
       font-size: 1.5rem;
       font-weight: 700;
       text-transform: uppercase;
       align-items: center;
       margin-left: 210px;
+      margin-bottom: 30px;
     }
 
-    .formTxt {
+    .formTxt { /* FORMULAIRE */
       display: flex;
       flex-direction: column;
-      margin-top: 20px;
+      justify-content: center;
       margin-bottom: 20px;
       width: 80%;
       background-color: #ced6d4;
       margin-left: auto;
       margin-right: auto;
       border-radius: 20px;
+      height: 80vh;
 
-      h3 {
+      h3 { /* INFORMATION DE VOS DONNÉES PERSONNELLES */
         font-family: 'Raleway';
         font-size: 1.3rem;
         font-weight: 700;
@@ -695,29 +691,158 @@ export default {
         width: 82%;
       }
 
-      .input {
+      .input { /* Parties à remplir */
         display: flex;
         flex-direction: column;
+        gap: 40px;
 
         .column1 {
-          display: flex;
-          gap: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          justify-content: center;
+          align-self: start;
           font-size: 1.2rem;
           font-family: 'Rubik', sans-serif;
+          
+          width: 100%;
+
+          .label1 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            justify-self: center;
+          }
+
+          #name {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            margin-left: 8.5vw;
+          }
+
+          .label2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            margin-left: 6vw;
+          }
+
+          #firstname {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            margin-left: 6vw;
+          }
+
+          .label3 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            margin-left: 2vw;
+          }
+
+          #birthday {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            width: 60%;
+            margin-left: 2vw;
+          }
+
+          input[type=text] {
+            height: 40px;
+            width: 250px;
+            border: 2px solid #7d7c7c;
+            border-radius: 8px;
+            box-sizing: border-box;
+          }
         }
 
         .column2 {
-          display: flex;
-          gap: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          justify-content: center;
+          align-self: start;
           font-size: 1.2rem;
           font-family: 'Rubik', sans-serif;
+          
+          width: 100%;
+
+          .label1 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            margin-left: 8.5vw;
+          }
+
+          #address {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            margin-left: 8.5vw;
+          }
+
+          .label2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            margin-left: 6vw;
+          }
+
+          #email {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            margin-left: 6vw;
+          }
+
+          .label3 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            margin-left: 2vw;
+          }
+
+          #telephone {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            width: 60%;
+            margin-left: 2vw;
+          }
+
+          input[type=text] {
+            height: 40px;
+            width: 250px;
+            border: 2px solid #7d7c7c;
+            border-radius: 8px;
+            box-sizing: border-box;
+          }
         }
 
         .column3 {
-          display: flex;
-          gap: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          justify-content: center;
+          align-self: start;
           font-size: 1.2rem;
           font-family: 'Rubik', sans-serif;
+          width: 100%;
+
+          .id {
+            grid-column: 1 / 2;
+            grid-row: 1 / 1;
+            margin-left: 8.5vw;
+          }
+
+          #id {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            margin-left: 8.5vw;
+          }
+
+          .jd {
+            grid-column: 2 / 3;
+            grid-row: 1 / 1;
+            margin-left: 6vw;
+          }
+
+          #jd {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            margin-left: 6vw;
+          }
         }
       }
     }
