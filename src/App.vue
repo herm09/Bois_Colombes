@@ -62,7 +62,7 @@ export default {
   font-family: 'Raleway';
 
   img { /* LOGO */ 
-    width: 50%; 
+    width: 50%;
   }
 
   nav {

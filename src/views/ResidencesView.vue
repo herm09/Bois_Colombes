@@ -279,6 +279,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
 
         .AppartTitle {
             display: flex;
@@ -401,7 +402,7 @@ export default {
             margin-left: 210px;
         }
 
-        .appart2 {
+        .appart2 { /* LA RÉSIDENCE LÉOPOLD-BELLAN */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -453,7 +454,7 @@ export default {
             }
         }
 
-        .appart3 {
+        .appart3 { /* LA RÉSIDENCE STE-MARTHE */
             display: flex;
             flex-direction: column;
             margin-top: 40px;
@@ -482,17 +483,23 @@ export default {
 
                 p {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Rubik", sans-serif;
                     border-radius: 10px;
                     margin-left: 5%;
                     font-size: 1.2rem;
                     text-align: start;
-                    line-height: 1.2;
                     background-color: #dfdbdb;
                     width: 15%;
-                    height: 13vh;
+                    height: 18vh;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                a {
+                    display: flex;
+                    text-align: start;
+                    justify-content: flex-start;
+                    justify-self: flex-start;
                 }
             }
 
@@ -553,16 +560,16 @@ export default {
 
                 p {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Rubik", sans-serif;
                     border-radius: 10px;
                     margin-left: 5%;
-                    font-size: 18px;
+                    font-size: 1.2rem;
                     text-align: start;
                     background-color: #dfdbdb;
                     width: 15%;
                     height: 13vh;
+                    flex-direction: column;
+                    justify-content: center;
                 }
             }
 
@@ -600,7 +607,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -638,7 +645,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -672,11 +679,11 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 20px;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
-            margin-bottom: 1.5rem;
+            margin-bottom: 15px;
             text-decoration: underline;
             text-decoration-color: #FBBA00;
             text-decoration-thickness: 2px;
@@ -692,7 +699,6 @@ export default {
             font-size: 1.2rem;
             gap: 30px;
             align-items: start;
-            justify-content: center;
     
             li::marker {
             color: rgb(251, 251, 251);
@@ -705,7 +711,7 @@ export default {
         height: 10vh;
         width: 100%;
         background-color: #89BAAD;
-        font-size: 1.3rem;
+        font-size: 18px;
         font-family: 'Rubik', sans-serif;
         text-transform: uppercase;
         font-weight: bold;

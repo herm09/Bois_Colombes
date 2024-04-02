@@ -228,7 +228,7 @@ export default {
         font-weight: 700;
         text-align: center;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .assistance {
@@ -401,7 +401,7 @@ export default {
 
 /* FOOTER */ 
 
-    .footer {
+.footer {
     display: flex;
     flex-direction: column;
 
@@ -420,7 +420,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 20px;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -437,7 +437,7 @@ export default {
             flex-direction: column;
             list-style: inside;
             font-family: 'Rubik', sans-serif;
-            font-size: 16px;
+            font-size: 1.2rem;
             gap: 30px;
             align-items: start;
     
@@ -458,7 +458,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 20px;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -475,7 +475,7 @@ export default {
             flex-direction: column;
             list-style: inside;
             font-family: 'Rubik', sans-serif;
-            font-size: 16px;
+            font-size: 1.2rem;
             gap: 30px;
             align-items: start;
     
@@ -492,7 +492,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 20px;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -509,10 +509,9 @@ export default {
             flex-direction: column;
             list-style: inside;
             font-family: 'Rubik', sans-serif;
-            font-size: 16px;
+            font-size: 1.2rem;
             gap: 30px;
             align-items: start;
-            justify-content: center;
     
             li::marker {
             color: rgb(251, 251, 251);

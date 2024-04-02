@@ -157,7 +157,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
     padding-bottom: 25px;
 
     .TitleSorties {
@@ -317,7 +317,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -355,7 +355,7 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
@@ -389,11 +389,11 @@ export default {
         margin-top: 20px;
     
         h2 {
-            font-size: 20px;
+            font-size: 1.6rem;
             font-family: 'Raleway';
             text-transform: uppercase;
             font-weight: bold;
-            margin-bottom: 1.5rem;
+            margin-bottom: 15px;
             text-decoration: underline;
             text-decoration-color: #FBBA00;
             text-decoration-thickness: 2px;
@@ -409,7 +409,6 @@ export default {
             font-size: 1.2rem;
             gap: 30px;
             align-items: start;
-            justify-content: center;
     
             li::marker {
             color: rgb(251, 251, 251);
@@ -422,7 +421,7 @@ export default {
         height: 10vh;
         width: 100%;
         background-color: #89BAAD;
-        font-size: 1.3rem;
+        font-size: 18px;
         font-family: 'Rubik', sans-serif;
         text-transform: uppercase;
         font-weight: bold;
