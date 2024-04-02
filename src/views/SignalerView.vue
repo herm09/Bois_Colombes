@@ -85,12 +85,17 @@ export default {
               <br><br>
               Envoyez-le par mail, accompagné des scans des pièces demandées : 
               <br><br>
-              une pièce d'identité
+              • une pièce d'identité
               <br>
-              un justificatif de domicile.
+              • un justificatif de domicile.
               <br><br>
-              ccas@bois-colombes.com
+            </p>
+            <div class="mail">
+              <img src="@/assets/mail.png" alt="">
+              <p>ccas@bois-colombes.com</p>  
+            </div>      
               <br><br>
+            <p>
               Le CCAS vous confirmera par retour de mail votre inscription.
             </p>
           </div>
@@ -108,23 +113,140 @@ export default {
 
       </section>
 
-      <section class="form">
+      <section class="formulaire">
         <h2>Formulaire de demande d'inscription en ligne</h2>
-        <div class="donnees">
-          <h3>Informatisation de vos données personnelles</h3>
-          <p>Les informations receuillies sur ce formulaire 
-            sont collectées par le CCAS (unique destinataire) 
-            pour la gestion des inscriptions aux sorties et 
-            activités de loisir et/ou contrat individuel 
-            d'accompagnement. La base légale du traitement 
-            est l'intérêt public du Service Solidarité et 
-            Autonomie. Les données sont conservées pendant 
-            la durée d'inscription. Vous pouvez accéder 
-            aux données vous concernant, les rectifier 
-            ou retirer votre consentement en envoyant 
+
+        <section class="formTxt">
+          <h3>Information de vos données personnelles </h3>
+          <p>
+            Les informations recueillies sur ce formulaire sont 
+            collectées par le CCAS (unique destinataire) pour 
+            la gestion des inscriptions aux sorties et activités 
+            de loisirs et/ou contrat individuel d'accompagnement. 
+            La base légale du traitement est l'intérêt public du 
+            Service Solidarité et Autonomie. Les données sont 
+            conservées pendant la durée d'inscription. Vous 
+            pouvez accéder aux données vous concernant, les 
+            rectifier ou retirer votre consentement en envoyant 
             une demande au service (ccas@bois-colombes.com).
           </p>
-        </div>
+
+          <div class="input">
+            <div class="column1">
+              <label for="name">Nom de Famille * 
+                  <input type="text" name="name" id="name" required>
+              </label>
+
+              <label for="firstname">Prénom * 
+                  <input type="text" name="firstname" id="firstname" required>
+              </label>
+
+              <label for="birthday">Date de naissance * 
+                  <input type="date" name="birthday" id="birthday" required>
+              </label>
+            </div>
+              
+            <div class="column2">
+              <label for="address">Adresse * 
+                <input type="text" name="address" id="address" required>
+              </label>
+
+              <label for="email">Email * 
+                  <input type="text" name="email" id="email" required>
+              </label>
+
+              <label for="telephone">
+                  Téléphone * 
+                  <input type="text" name="telephone" id="telephone" required>
+              </label>
+            </div>
+            
+            <div class="column3">
+              <label>
+                <input type="file" name="id" id="id" required>
+                <span>Joindre une copie de votre pièce d'identité</span>
+              </label>
+
+              <label>
+                  <input type="file" for="file" name="jd" id="jd" required>
+                  <span>Joindre une copie de votre justificatif de domicile</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="confirm">
+            <label for="che">
+                <input type="checkbox" name="" id="che">
+                <span>Cochez la case pour confirmer votre souhait *
+                    Par la signature de ce contrat, je signifie que 
+                    je souhaite m'inscrire au CCAS et que j'accepte 
+                    le contrat individuel d'accompagnement
+                    Cochez la case
+                </span>
+        <!-- pour faire la signature électronique -->
+                    <!-- <style>
+                        #signatureCanvas {
+                            border: 2px solid #000;
+                            cursor: crosshair;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <canvas id="signatureCanvas" width="400" height="200"></canvas>
+                    <script>
+                        const canvas = document.getElementById('signatureCanvas');
+                        const context = canvas.getContext('2d');
+                        let isDrawing = false;
+                
+                        function startDrawing(e) {
+                            isDrawing = true;
+                            draw(e);
+                        }
+                
+                        function stopDrawing() {
+                            isDrawing = false;
+                            context.beginPath();
+                        }
+                
+                        function draw(e) {
+                            if (!isDrawing) return;
+                
+                            const x = e.clientX - canvas.offsetLeft;
+                            const y = e.clientY - canvas.offsetTop;
+                
+                            context.lineWidth = 2;
+                            context.lineCap = 'round';
+                            context.strokeStyle = '#000';
+                
+                            context.lineTo(x, y);
+                            context.stroke();
+                            context.beginPath();
+                            context.moveTo(x, y);
+                        }
+                
+                        canvas.addEventListener('mousedown', startDrawing);
+                        canvas.addEventListener('mousemove', draw);
+                        canvas.addEventListener('mouseup', stopDrawing);
+                        canvas.addEventListener('mouseout', stopDrawing);
+                
+                        // Pour les appareils tactiles
+                        canvas.addEventListener('touchstart', (e) => {
+                            startDrawing(e.touches[0]);
+                        });
+                
+                        canvas.addEventListener('touchmove', (e) => {
+                            e.preventDefault();
+                            draw(e.touches[0]);
+                        });
+                
+                        canvas.addEventListener('touchend', stopDrawing);
+                    </script> -->
+            </label>
+          </div>
+        </section>
+
+        
+
       </section>
 
     </section>
@@ -239,7 +361,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
     height: 100vh;
 
     h2 {
@@ -250,7 +371,7 @@ export default {
       text-transform: uppercase;
       align-items: center;
       letter-spacing: 0.4px;
-      margin-left: 140px;
+      margin-left: 210px;
     }
 
     .inscriTxt {
@@ -284,12 +405,12 @@ export default {
         }
       }
 
-        img {
-            height: 350px;
-            float: right;
-            margin-left: 400px;
-            margin-top: 5%;
-        }
+      img {
+        height: 350px;
+        float: right;
+        margin-left: 400px;
+        margin-top: 5%;
+      }
     }
 
     .inscriTxt2 {
@@ -311,6 +432,7 @@ export default {
         display: flex;
         flex-direction: column;
         list-style: inside;
+        font-size: 1.2rem;
         font-family: 'Rubik', sans-serif;
         text-align: start;
         margin-left: 210px;
@@ -334,7 +456,7 @@ export default {
   .contrat {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
 
     .contratTitle {
       display: flex;
@@ -362,9 +484,12 @@ export default {
 
       .download {
         display: flex;
+        gap: 20px;
 
         .hrDownload1 {
           border: 2px solid #FBBA00;
+          rotate: 90deg;
+          margin-right: 20px;
         }
 
         button {
@@ -382,131 +507,223 @@ export default {
 
         .hrDownload2 {
           border: 2px solid #FBBA00;
+          rotate: 90deg;
+          margin-left: 20px;
+          
         }
       }      
     }
+
+    .method1 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      h2 {
+        display: flex;
+        font-family: "Raleway";
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        margin-bottom: 40px;
+        justify-content: center;
+      }
+
+      .enLigne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(225, 225, 225);
+        border-radius: 10px;
+        height: 30vh;
+        width: 70%;
+
+        h4 {
+          display: flex;
+          font-family: 'Raleway';
+          margin-left: 60px;
+          font-size: 1.3rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 1.2rem;
+          text-align: start;
+          margin-left: 60px;
+          font-family: 'Rubik', sans-serif;
+        }
+      }
   }
 
-  .method1 {
+    .method2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 15px;
+      text-align: start;
+      height: 60vh;
+      margin-left: 15%;
+      margin-right: 15%;
+
+      .mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #89BAAD;
+        border-radius: 10px;
+        width: 100%;
+
+        h4 {
+          font-family: 'Raleway';
+          color: #1F266B;
+          font-size: 20px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-left: 1.3rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 1.2rem;
+          text-align: start;
+          margin-left: 20px;
+          font-family: 'Rubik', sans-serif;
+        }
+
+        .mail {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          p {
+            font-size: 1.2rem;
+            text-align: start;
+            margin-left: 20px;
+            font-family: 'Rubik', sans-serif;
+          }
+
+          img {
+            width: 4%;
+          }
+        }
+      }
+
+      .accueil {
+        display: flex;
+        flex-direction: column;
+        background-color: #89BAAD;
+        border-radius: 10px;
+        width: 100%;
+
+        h4 {
+          font-family: 'Raleway';
+          color: #1F266B;
+          font-size: 1.3rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-left: 20px;
+          margin-top: 36px;
+          margin-bottom: 20px;
+        }
+
+        h5 {
+          font-family: 'Raleway';
+          color: #1F266B;
+          font-size: 1.3rem;
+          font-weight: 700;
+          margin-left: 20px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 1.2rem;
+          text-align: start;
+          margin-left: 20px;
+          font-family: 'Rubik', sans-serif;
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .formulaire {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
 
     h2 {
-      display: flex;
-      font-family: "Raleway";
+      font-family: 'Raleway';
       font-size: 1.5rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.4px;
-      margin-bottom: 40px;
-      justify-content: center;
+      align-items: center;
+      margin-left: 210px;
     }
 
-    .enLigne {
+    .formTxt {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       margin-top: 20px;
       margin-bottom: 20px;
+      width: 80%;
+      background-color: #ced6d4;
       margin-left: auto;
       margin-right: auto;
-      background-color: rgb(225, 225, 225);
-      border-radius: 10px;
-      height: 25vh;
-      width: 70%;
+      border-radius: 20px;
 
-      h4 {
+      h3 {
+        font-family: 'Raleway';
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 120px
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-family: 'Rubik', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 120px;
+        width: 82%;
+      }
+
+      .input {
         display: flex;
-        font-family: 'Raleway';
-        margin-left: 60px;
-        font-size: 1.3rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-      }
+        flex-direction: column;
 
-      p {
-        font-size: 1.2rem;
-        text-align: start;
-        margin-left: 60px;
-        font-family: 'Rubik', sans-serif;
+        .column1 {
+          display: flex;
+          gap: 20px;
+          font-size: 1.2rem;
+          font-family: 'Rubik', sans-serif;
+        }
+
+        .column2 {
+          display: flex;
+          gap: 20px;
+          font-size: 1.2rem;
+          font-family: 'Rubik', sans-serif;
+        }
+
+        .column3 {
+          display: flex;
+          gap: 20px;
+          font-size: 1.2rem;
+          font-family: 'Rubik', sans-serif;
+        }
       }
     }
+  }
+
   
-  }
-
-  .method2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 15px;
-    text-align: start;
-    height: 40vh;
-    margin-left: 15%;
-    margin-right: 15%;
-
-    .mail {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #89BAAD;
-      border-radius: 10px;
-      width: 100%;
-
-      h4 {
-        font-family: 'Raleway';
-        color: #1F266B;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-left: 1.3rem;
-      }
-
-      p {
-        font-size: 1.2rem;
-        text-align: start;
-        margin-left: 20px;
-        font-family: 'Rubik', sans-serif;
-      }
-    }
-
-    .accueil {
-      display: flex;
-      flex-direction: column;
-      background-color: #89BAAD;
-      border-radius: 10px;
-      width: 100%;
-
-      h4 {
-        font-family: 'Raleway';
-        color: #1F266B;
-        font-size: 1.3rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-left: 20px;
-        margin-top: 18px;
-      }
-
-      h5 {
-        font-family: 'Raleway';
-        color: #1F266B;
-        font-size: 1rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-left: 20px;
-        width: 80%;
-      }
-
-      p {
-        font-size: 1.2rem;
-        text-align: start;
-        margin-left: 20px;
-        font-family: 'Rubik', sans-serif;
-        width: 70%;
-      }
-    }
-  }
 }
 
 /* FOOTER */ 

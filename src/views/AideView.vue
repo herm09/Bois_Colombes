@@ -256,7 +256,6 @@ export default {
             font-weight: 700;
             text-transform: uppercase;
             align-items: center;
-            letter-spacing: 0.4px;
             margin-left: 140px;
         }
 
@@ -270,9 +269,7 @@ export default {
                 font-family: 'Rubik', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 400;
-                line-height: 1.5;
                 margin-right: 20px;
-                text-align: justify;
                 width: 40%;
             }
 
@@ -293,7 +290,6 @@ export default {
                 font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 0.4px;
                 margin-bottom: 20px;
             }
 
@@ -303,14 +299,12 @@ export default {
                 font-size: 1.3rem;
                 font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 0.4px;
             }
 
             p {
                 font-family: 'Rubik', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 400;
-                text-align: justify;
                 width: 70%;
             }
         }
@@ -327,7 +321,6 @@ export default {
                 font-weight: 700;
                 text-transform: uppercase;
                 align-items: center;
-                letter-spacing: 0.4px;
                 margin-left: 140px;
                 margin-bottom: 20px;
             }
