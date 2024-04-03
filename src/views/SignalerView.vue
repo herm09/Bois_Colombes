@@ -170,77 +170,82 @@ export default {
                   <!-- <span>Joindre une copie de votre justificatif de domicile</span> -->
               
             </div>
+
+            <div class="column4">
+              <label for="check">
+                  <input type="checkbox" name="" id="che">
+                  <span>Cochez la case pour confirmer votre souhait *
+                      Par la signature de ce contrat, je signifie que 
+                      je souhaite m'inscrire au CCAS et que j'accepte 
+                      le contrat individuel d'accompagnement
+                      Cochez la case
+                  </span>
+                  
+                  <!-- <SignFile /> -->
+
+          <!-- pour faire la signature électronique -->
+                      <!-- <style>
+                          #signatureCanvas {
+                              border: 2px solid #000;
+                              cursor: crosshair;
+                          }
+                      </style>
+                  </head>
+                  <body>
+                      <canvas id="signatureCanvas" width="400" height="200"></canvas>
+                      <script>
+                          const canvas = document.getElementById('signatureCanvas');
+                          const context = canvas.getContext('2d');
+                          let isDrawing = false;
+                  
+                          function startDrawing(e) {
+                              isDrawing = true;
+                              draw(e);
+                          }
+                  
+                          function stopDrawing() {
+                              isDrawing = false;
+                              context.beginPath();
+                          }
+                  
+                          function draw(e) {
+                              if (!isDrawing) return;
+                  
+                              const x = e.clientX - canvas.offsetLeft;
+                              const y = e.clientY - canvas.offsetTop;
+                  
+                              context.lineWidth = 2;
+                              context.lineCap = 'round';
+                              context.strokeStyle = '#000';
+                  
+                              context.lineTo(x, y);
+                              context.stroke();
+                              context.beginPath();
+                              context.moveTo(x, y);
+                          }
+                  
+                          canvas.addEventListener('mousedown', startDrawing);
+                          canvas.addEventListener('mousemove', draw);
+                          canvas.addEventListener('mouseup', stopDrawing);
+                          canvas.addEventListener('mouseout', stopDrawing);
+                  
+                          // Pour les appareils tactiles
+                          canvas.addEventListener('touchstart', (e) => {
+                              startDrawing(e.touches[0]);
+                          });
+                  
+                          canvas.addEventListener('touchmove', (e) => {
+                              e.preventDefault();
+                              draw(e.touches[0]);
+                          });
+                  
+                          canvas.addEventListener('touchend', stopDrawing);
+                      </script> -->
+              </label>
+            </div>
           </div>
 
-          <div class="column4">
-            <label for="che">
-                <input type="checkbox" name="" id="che">
-                <span>Cochez la case pour confirmer votre souhait *
-                    Par la signature de ce contrat, je signifie que 
-                    je souhaite m'inscrire au CCAS et que j'accepte 
-                    le contrat individuel d'accompagnement
-                    Cochez la case
-                </span>
-        <!-- pour faire la signature électronique -->
-                    <!-- <style>
-                        #signatureCanvas {
-                            border: 2px solid #000;
-                            cursor: crosshair;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <canvas id="signatureCanvas" width="400" height="200"></canvas>
-                    <script>
-                        const canvas = document.getElementById('signatureCanvas');
-                        const context = canvas.getContext('2d');
-                        let isDrawing = false;
-                
-                        function startDrawing(e) {
-                            isDrawing = true;
-                            draw(e);
-                        }
-                
-                        function stopDrawing() {
-                            isDrawing = false;
-                            context.beginPath();
-                        }
-                
-                        function draw(e) {
-                            if (!isDrawing) return;
-                
-                            const x = e.clientX - canvas.offsetLeft;
-                            const y = e.clientY - canvas.offsetTop;
-                
-                            context.lineWidth = 2;
-                            context.lineCap = 'round';
-                            context.strokeStyle = '#000';
-                
-                            context.lineTo(x, y);
-                            context.stroke();
-                            context.beginPath();
-                            context.moveTo(x, y);
-                        }
-                
-                        canvas.addEventListener('mousedown', startDrawing);
-                        canvas.addEventListener('mousemove', draw);
-                        canvas.addEventListener('mouseup', stopDrawing);
-                        canvas.addEventListener('mouseout', stopDrawing);
-                
-                        // Pour les appareils tactiles
-                        canvas.addEventListener('touchstart', (e) => {
-                            startDrawing(e.touches[0]);
-                        });
-                
-                        canvas.addEventListener('touchmove', (e) => {
-                            e.preventDefault();
-                            draw(e.touches[0]);
-                        });
-                
-                        canvas.addEventListener('touchend', stopDrawing);
-                    </script> -->
-            </label>
-          </div>
+          
         </section>
 
         
@@ -859,15 +864,23 @@ export default {
           font-size: 1.2rem;
           font-family: 'Rubik', sans-serif;
 
-          span {
-            margin-left: 10px;
+          .check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            font-size: 1.2rem;
+
+            canvas {
+              border: 1px solid black;
+              background-color: white;
+              cursor: crosshair;
+            }
           }
-        }
+        }      
       }
     }
   }
-
-  
 }
 
 /* FOOTER */ 
